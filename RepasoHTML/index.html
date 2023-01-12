@@ -8,14 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajustar el tamaño al del dispositivo -->
     <title>Repaso HTML</title>
     <link rel="shortcut icon" href="./assets/img/gato.png" type="image/x-icon">
-    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css//bootstrap.min.css">
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -25,13 +25,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#home">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#about">Acerca de nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="#contact">Contactanos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -45,21 +45,114 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-10">
-                <section class="shadow-sm p-3 mb-5 bg-body rounded">
+                <section id="home" class="shadow-sm p-3 mb-5 bg-body rounded">
                     <h4 class="text-primary text-center">
                         <i data-feather="github"></i> Bienvenido, conoce nuestros servicios
                     </h4>
+                    <div class="container">
+                        <div class="row my-3">
+                            <div class="col-12 col-md-4 text-center">
+                                <img src="./assets/img/clinica.jpeg" class="img-thumbnail" width="300" height="200"
+                                    alt="VETERINARIA-MORELOS,CUIDADO,GATOS">
+                                <h5 class="my-2">Estética animal</h5>
+                                <small>Servicio de cuidado para tu masconta. Servicio de alta calidad</small>
+                            </div>
+                            <div class="col-12 col-md-4 text-center">
+                                <img src="./assets/img/gatoEstetoscopio.jpg" class="img-thumbnail" width="300"
+                                    height="200" alt="VETERINARIA-MORELOS,CUIDADO,GATOS">
+                                <h5 class="my-2">Consulta de mascotas</h5>
+                                <small>Consultas generales a precios acccesibles</small>
+                            </div>
+                            <div class="col-12 col-md-4 text-center">
+                                <img src="./assets/img/perroHuesos.jpg" class="img-thumbnail" width="300" height="200"
+                                    alt="VETERINARIA-MORELOS,CUIDADO,GATOS">
+                                <h5 class="my-2">Servicio especializado</h5>
+                                <small>Equipados con tecnologia moderna para darte los resultados mas precisos sobre la
+                                    salud de tu mascota</small>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="about" class="shadow-sm p-3 mb-5 bg-body rounded">
+                    <h4 class="text-primary text-center">
+                        <i data-feather="info"></i>
+                        Acerca de nosotros
+                    </h4>
+                    <div class="container">
+                        <p>
+                            Somos una empresa enfocada al cuidado de las mascotas,
+                            nuestro objetivo es que las mascotas tengan una vida feliz
+                        </p>
+                        <div class="row">
+                            <div class="col-12 col-md-6 text-center">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img src="./assets/img/voluntario.png" alt="DONACION" width="100" height="100">
+                                        <p class="text-pink">Amor por las mascotas, dame tu dinero</p>
+                                    </div>
+                                    <div class="col-12">
+                                        <img src="./assets/img/perro.png" alt="DONACION" width="100" height="100">
+                                        <p class="text-brown">Manten a tus mascotas felices</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3776.065883102736!2d-99.19296438523493!3d18.839738187223904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdd89fc498e949%3A0xb096cca5b6b825e8!2sVeterinaria%20Cl%C3%ADnica%20Canis!5e0!3m2!1ses!2smx!4v1673537975523!5m2!1ses!2smx"
+                                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="contact" class="shadow-sm p-3 mb-5 bg-body rounded">
+                    <h4 class="text-primary text-center">
+                        <i data-feather="mail"></i>
+                        Contáctanos
+                    </h4>
+                    <div class="container">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Correo Electrónico</label>
+                                        <input type="email" class="form-control" id="email"
+                                            aria-describedby="emailHelp" placeholder="ejemplo@ej.com" required>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="mb-3">
+                                        <label for="phone" class="form-label">Número de teléfono</label>
+                                        <input type="tel" class="form-control" id="phone" required>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="mb-3">
+                                        <label for="description" class="form-label">Mensaje</label>
+                                        <textarea rows="3" class="form-control" id="phone" description
+                                        placeholder="Amo su servicio..."></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-end">
+                                    <button class="btn-success p-3" type="submit">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </section>
             </div>
             <div class="col-12 col-md-2">
                 <aside>
                     <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="./assets/img/vacuna.jpg" class="card-img-top img-thumbnail border-danger-img"
+                            alt="VACUNA-VETERINARIA MORELOS">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title text-danger">Campaña de vacuna antirraábica</h5>
+                            <p class="card-text">
+                                Ven a vacunar a tu mascota de forma gratuita, estaremos vacunando a tu mascota contra la
+                                rabia
+                                <b>Desde el 1 de enero al 30 de enero del 2023</b>
+                            </p>
                         </div>
                     </div>
                 </aside>
@@ -67,7 +160,7 @@
         </div>
     </div>
     <!-- class="header" id="header" style="background-color: black; color: white;" -->
-    <header>
+    <!-- <header>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-8">
@@ -81,8 +174,8 @@
     </header>
     <nav>
         <li class="text-danger">
-            <!-- href es un evento de click, en este caso nos lleva a la section con el id home -->
-            <a href="#hone">Inicio</a>
+            href es un evento de click, en este caso nos lleva a la section con el id home
+            <a href="#home">Inicio</a>
             <a href="#about">Acerca de nosotros</a>
             <a href="#contact">Contacto</a>
         </li>
@@ -91,8 +184,8 @@
         <h4>Inicio</h4>
         <figure>
             <img src="./assets/img/veterinaria.jpg" alt="VETERINARIA-CUIDA MASCOTAS-MASCOTAS" width="250" height="200">
-            <!-- alt es usado por google para los motores de busqueda de imagenes. 
-            El guión separa las palabras por las que se puede buscar -->
+            alt es usado por google para los motores de busqueda de imagenes. 
+            El guión separa las palabras por las que se puede buscar
         </figure>
         <small>
             VETERINARIA LA FE
@@ -137,7 +230,7 @@
     </aside>
     <footer>
         <p>Created by UTEZ</p>
-    </footer>
+    </footer> -->
     <script src="./js/bootstrap.min.js"></script>
     <script>
         feather.replace()

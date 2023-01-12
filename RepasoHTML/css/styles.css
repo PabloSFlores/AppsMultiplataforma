@@ -1,14 +1,14 @@
-/*Nivel 1 de especificidad
-Elemento*/
+/* /*Nivel 1 de especificidad
+Elemento
 header{ 
     background-color: rgb(188, 245, 247) !important;
     width: 100% !important;
     padding: 5px !important;
 }
 
-/*Nivel 2 de especificidad
+Nivel 2 de especificidad
 - Clases
-- pseudo-clases*/
+- pseudo-clases
 .header{
     background-color: rgb(145, 221, 101);
     width: 100%;
@@ -19,11 +19,22 @@ header:hover{
     background-color: brown ;
 }
 
-/*Niivel 3 de especificidad
-Identificadores*/
+Niivel 3 de especificidad
+Identificadores
 #header{
     background-color: rgb(113, 43, 204) !important;
     color: white;
     width: 100%;
     padding: 5px;
+} */
+
+.border-danger-img{
+    background-color: #f834348c!important;
+}
+
+.text-pink{
+    color: #d85094;
+}
+.text-brown{
+    color: #945b25;
 }
