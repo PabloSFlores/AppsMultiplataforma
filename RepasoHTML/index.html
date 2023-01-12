@@ -1,0 +1,147 @@
+<!DOCTYPE html> <!-- Para que el navegador sepa que es un documento escrito en html 5 -->
+<html lang="en"> <!-- Idioma -->
+
+<head>
+    <!-- Instrucciones de comportamiento para el navegador -->
+    <meta charset="UTF-8"> <!-- Unicode -> Caracteres especiales -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajustar el tamaño al del dispositivo -->
+    <title>Repaso HTML</title>
+    <link rel="shortcut icon" href="./assets/img/gato.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+    <link rel="stylesheet" href="./css//bootstrap.min.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-10">
+                <section class="shadow-sm p-3 mb-5 bg-body rounded">
+                    <h4 class="text-primary text-center">
+                        <i data-feather="github"></i> Bienvenido, conoce nuestros servicios
+                    </h4>
+                </section>
+            </div>
+            <div class="col-12 col-md-2">
+                <aside>
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+    <!-- class="header" id="header" style="background-color: black; color: white;" -->
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8">
+                    <p class="bg-danger">Hola mundo</p>
+                </div>
+                <div class="bg-primary col-4">
+                    .
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <li class="text-danger">
+            <!-- href es un evento de click, en este caso nos lleva a la section con el id home -->
+            <a href="#hone">Inicio</a>
+            <a href="#about">Acerca de nosotros</a>
+            <a href="#contact">Contacto</a>
+        </li>
+    </nav>
+    <section id="home">
+        <h4>Inicio</h4>
+        <figure>
+            <img src="./assets/img/veterinaria.jpg" alt="VETERINARIA-CUIDA MASCOTAS-MASCOTAS" width="250" height="200">
+            <!-- alt es usado por google para los motores de busqueda de imagenes. 
+            El guión separa las palabras por las que se puede buscar -->
+        </figure>
+        <small>
+            VETERINARIA LA FE
+            ¡Que tu mascota esté sano y fuerte!
+            Mantén su cartilla de vacunas actualizado.
+            ¡Contamos con vacunas a domicilio!
+        </small>
+    </section>
+    <section id="about">
+        <h4>Acerca de nosotros</h4>
+        <p>
+            Su mascota se merece siempre la mejor atención,
+            por eso es también importante la proporción de cuidados que le ayudan
+            a prevenir enfermedades. En Veterinaria la Fe Ponemos a su disposición
+            servicios de prevención y tratamiento para que su mascota siempre este sana,
+            además con nuestro servicio a domicilio no tenga que preocuparse por salir de casa.
+        </p>
+    </section>
+    <section id="contact">
+        <form>
+            <label>Correo electrónico</label>
+            <input type="email" id="email" required>
+            <label>Teléfono</label>
+            <input type="phone" id="phone" required minlength="10">
+            <label>Mensaje</label>
+            <textarea rows="3"></textarea>
+            <button type="submit">Enviar</button>
+            <input type="color">
+        </form>
+    </section>
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="bg-primary col-12 col-md-6 col-xl-4">
+                    Hola
+                </div>
+            </div>
+        </div>
+    </section>
+    <aside>
+
+    </aside>
+    <footer>
+        <p>Created by UTEZ</p>
+    </footer>
+    <script src="./js/bootstrap.min.js"></script>
+    <script>
+        feather.replace()
+    </script>
+</body>
+
+</html>

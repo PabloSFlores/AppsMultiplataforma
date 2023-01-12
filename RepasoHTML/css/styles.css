@@ -1,0 +1,29 @@
+/*Nivel 1 de especificidad
+Elemento*/
+header{ 
+    background-color: rgb(188, 245, 247) !important;
+    width: 100% !important;
+    padding: 5px !important;
+}
+
+/*Nivel 2 de especificidad
+- Clases
+- pseudo-clases*/
+.header{
+    background-color: rgb(145, 221, 101);
+    width: 100%;
+    padding: 5px;
+}
+
+header:hover{
+    background-color: brown ;
+}
+
+/*Niivel 3 de especificidad
+Identificadores*/
+#header{
+    background-color: rgb(113, 43, 204) !important;
+    color: white;
+    width: 100%;
+    padding: 5px;
+}
